@@ -1,63 +1,105 @@
 
-<!DOCTYPE html>
-<html lang="id">
+<!DOCTYPE html><html lang="id">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Bang Kiko | Link Bio</title>
-
-  <style>
-    body {
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bang Kiko | Official Bio</title>  <!-- Google Font Gaming -->  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">  <style>
+    * {
+      box-sizing: border-box;
       margin: 0;
+      padding: 0;
+      font-family: 'Orbitron', sans-serif;
+    }
+
+    body {
       min-height: 100vh;
       display: flex;
-      justify-content: center;
       align-items: center;
-      background: #0f0f14;
-      font-family: Arial, sans-serif;
+      justify-content: center;
+      background: radial-gradient(circle at top, #00ffff33, transparent 40%),
+                  linear-gradient(135deg, #0a0a0a, #140000);
+      color: #fff;
+      padding: 20px;
     }
 
     .card {
       width: 100%;
-      max-width: 360px;
-      background: #16161d;
-      padding: 24px;
-      border-radius: 16px;
+      max-width: 420px;
+      background: rgba(0,0,0,0.75);
+      border-radius: 24px;
+      padding: 32px 26px;
       text-align: center;
+      box-shadow: 0 0 30px rgba(0,255,255,0.25), 0 0 50px rgba(255,0,60,0.15);
+      animation: fadeIn 1s ease;
+    }
+
+    .avatar {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 3px solid #00ffff;
+      box-shadow: 0 0 25px rgba(0,255,255,0.8);
+      margin-bottom: 14px;
     }
 
     h1 {
-      color: white;
-      margin-bottom: 8px;
+      font-size: 28px;
+      margin-bottom: 6px;
+      letter-spacing: 2px;
     }
 
     p {
-      color: #aaa;
       font-size: 14px;
+      color: #ccc;
       margin-bottom: 24px;
     }
 
-    a {
+    .btn {
       display: block;
-      padding: 14px;
+      width: 100%;
+      padding: 16px;
       margin-bottom: 14px;
-      background: #ff0055;
-      color: white;
+      border-radius: 14px;
       text-decoration: none;
-      border-radius: 12px;
-      font-weight: bold;
+      font-weight: 700;
+      color: #000;
+      background: linear-gradient(90deg, #ff003c, #00ffff);
+      box-shadow: 0 0 18px rgba(0,255,255,0.6);
+      transition: all 0.3s ease;
     }
-  </style>
-</head>
 
-<body>
-  <div class="card">
-    <h1>Bang Kiko</h1>
-    <p>Official Links</p>
+    .btn:hover {
+      transform: scale(1.06);
+      box-shadow: 0 0 30px rgba(255,0,60,0.9);
+    }
 
-    <a href="https://saweria.co/BangKiko" target="_blank">Saweria</a>
-    <a href="https://sociabuzz.com/bangkiko05/tribe" target="_blank">Sociabuzz</a>
-    <a href="https://www.tiktok.com/@aa_sunda_05" target="_blank">TikTok</a>
-  </div>
-</body>
+    footer {
+      margin-top: 22px;
+      font-size: 11px;
+      color: #777;
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(25px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  </style></head>
+<body>  <div class="card">
+    <img class="avatar" src="https://avatars.githubusercontent.com/u/0?v=4" alt="Bang Kiko"><h1>BANG KIKO</h1>
+<p>Gamer • Streamer • Creator</p>
+
+<a class="btn" href="https://saweria.co/BangKiko" target="_blank">💰 Saweria</a>
+<a class="btn" href="https://sociabuzz.com/bangkiko05/tribe" target="_blank">🔥 Sociabuzz</a>
+<a class="btn" href="https://www.tiktok.com/@aa_sunda_05" target="_blank">🎵 TikTok</a>
+
+<footer>© 2025 Bang Kiko</footer>
+
+  </div></body>
 </html>
