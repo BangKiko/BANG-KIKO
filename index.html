@@ -54,7 +54,25 @@ body{
   .avatar{
   animation: float 3s ease-in-out infinite, glow 2s alternate infinite;
 }
-
+.logo-hero{
+  width:260px;
+  max-width:90%;
+  height:auto;
+  border-radius:18px;
+  box-shadow:
+    0 0 25px rgba(0,255,255,.6),
+    0 0 45px rgba(255,0,0,.6);
+  animation: logoPulse 3s ease-in-out infinite;
+}@keyframes logoPulse{
+  0%,100%{
+    transform:scale(1);
+    filter:brightness(1);
+  }
+  50%{
+    transform:scale(1.05);
+    filter:brightness(1.2);
+  }
+}
 @keyframes float{
   0%{ transform: translateY(0); }
   50%{ transform: translateY(-8px); }
@@ -126,10 +144,10 @@ footer{
 <body>
 <div class="card">
 
-<!-- <h1>BANG KIKO</h1> -->
-<img class="avatar" src="logo.png" alt="Bang Kiko Logo">
-<h1>BANG KIKO</h1>
-<p>Streamer • Gaming • Official Links</p>
+<!-- BANG KIKO -->
+<img class="avatar logo-hero" src="logo.png" alt="Bang Kiko Logo">
+phBA<hBAG
+ANnStreamer • Gaming • Official Links<//>
 
 <a class="btn" href="https://saweria.co/BangKiko" target="_blank">💸 SAWERIA</a>
 <a class="btn" href="https://sociabuzz.com/bangkiko05/tribe" target="_blank">💖 SOCIABUZZ</a>
